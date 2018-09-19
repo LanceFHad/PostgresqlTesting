@@ -1,0 +1,18 @@
+In order to access the postgresql shell
+1. Login as root using the $ su command
+2. Execute the command $ service postgresql start 
+(if it isn't already started, which can be checked with the command service postgresql status)
+3. Execute the command $ sudo -u postgres psql
+4. This puts you into the postgresql shell
+
+There are several commands to know in the shell
+=# \q quit
+=# \c [database name] access a specific database
+=# \dt (while accessing a database) to show tables
+=# \l show all databases
+You can also execute sql commands so long as they are formatted correctly and have a semicolon at the end
+I have created a database test, I don't know if it exists on other logins on the computer, but since
+postgresql is installed globally I believe it will be.
+
+This code has access to the PostGreSql driver in it's lib folder, as well as the mongo drivers
+Good luck!
